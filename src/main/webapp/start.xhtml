@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Стартовая страница</title>
+    <link rel="icon" href="smile.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&amp;display=swap" rel="stylesheet"/>
+    <link href="main.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./clock.js"></script>
+</h:head>
+
+<h:body onload="updateClock(); setInterval(updateClock, 9000);">
+    <table id="main-grid">
+        <tr>
+            <td id="header-plate" colspan="2">
+                <span class="left-aligned">Вариант - 4470</span>
+                <span class="right-aligned">ФИО: Гадеев Руслан Рустамович<br/>Группа: P3214</span>
+            </td>
+        </tr>
+    </table>
+    <p><span id="clock">:(</span></p>
+    <h:link id="urlmain" value="Основная страница" outcome="mainpage"/>
+</h:body>
+
+</html>
